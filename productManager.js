@@ -1,4 +1,4 @@
-class ticketManager {
+class productManager {
 
     constructor() {
         this.products = [];
@@ -6,6 +6,15 @@ class ticketManager {
 
     getProductos = () => {
         return this.products;
+    }
+
+    getProdctsById = (id) => {
+        const productById = this.products.find(product => product.id === id);
+
+        if (!productById){
+            throw new Error('No existe el producto');
+        }
+        return productById
     }
 
     agregarProductos = (title, description, price, thumbnail, code, stock) => {
@@ -28,7 +37,7 @@ class ticketManager {
     }
 }
 
-const manejadorProducts = new ticketManager();  
+const manejadorProducts = new productManager();  
 
 manejadorProducts.agregarProductos('computadora', 'rapida', 200000, 'https://www.fullh4rd.com.ar/img/productos/32/notebook-lenovo-156-ideapad-3-15itl6-i71165g7-8gb-256gb-w11h-0.jpg', 1, 5);
 manejadorProducts.agregarProductos('computadora2', 'mas rapida', 400000, 'https://http2.mlstatic.com/D_NQ_NP_794081-MLA28199452613_092018-O.webp', 2, 7);
