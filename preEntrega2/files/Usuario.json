@@ -1,0 +1,16 @@
+[
+	{
+		"nombre": "pepe",
+		"apellido": "pepito",
+		"edad": 30,
+		"cursos": "back-end",
+		"id": 1
+	},
+	{
+		"nombre": "juan",
+		"apellido": "juancho",
+		"edad": 48,
+		"cursos": "front-end",
+		"id": 2
+	}
+]
