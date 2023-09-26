@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "code": "1",
+        "title": "smarth tv philips",
+        "description": "LED Android 10 4K 50",
+        "price": 209.999,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_668696-MLA71172143639_082023-O.webp",
+        "stock": 10 
+    },
+    {
+        "id": 2,
+        "code": "2",
+        "title": "Smart Tv Sansei",
+        "description": "Led Hd 32 Android",
+        "price": 89.999,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_623125-MLU69141796830_042023-O.webp",
+        "stock": 5
+    },
+    {
+        "id": 3,
+        "code": "3",
+        "title": "Smart TV Noblex",
+        "description": "LED Android TV Full HD 43",
+        "price": 144.999,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_909868-MLA52238319522_112022-O.webp",
+        "stock": 8
+    },
+    {
+        "id": 4,
+        "code": "4",
+        "title": "Smart Tv Philips",
+        "description": "Android Hd 32",
+        "price": 105.999,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_608764-MLA71170130107_082023-O.webp",
+        "stock": 4
+    },
+    {
+        "id": 5,
+        "code": "5",
+        "title": "Televisor Tcl",
+        "description": "Smart Tv 32",
+        "price": 94.299,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_619096-MLA51838328653_102022-O.webp ",
+        "stock": 12
+    },
+    {
+        "id": 6,
+        "code": "6",
+        "title": "Smart Tv Samsung",
+        "description": " 4k Tizen Led 50",
+        "price": 249.999,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_904598-MLU69493154879_052023-O.webp",
+        "stock": 11
+    },
+    {
+        "id": 7,
+        "code": "7",
+        "title": "Televisor Noblex",
+        "description": "Wifi Android Fullhd 43",
+        "price": 143.999,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_744993-MLA51601140437_092022-O.webp",
+        "stock":  8
+    },
+    {
+        "id": 8,
+        "code": "8",
+        "title": "Tv LG",
+        "description": "4k Ultra hd",
+        "price": 243.310,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_832225-MLA53474031859_012023-O.webp",
+        "stock": 6
+    },
+    {
+        "id": 9,
+        "code": "9",
+        "title": "TV Hitachi",
+        "description": "LED Google TV 4K 50",
+        "price": 198.999,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_906009-MLA69427985284_052023-O.webp",
+        "stock": 10 
+    },
+    {
+        "id": 10,
+        "code": "10",
+        "title": "TV Noblex",
+        "description": "4k Sistema Vidaa 50",
+        "price": 189.999,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_795066-MLA51934174412_102022-O.webp",
+        "stock": 5
+    }
+    
+]
