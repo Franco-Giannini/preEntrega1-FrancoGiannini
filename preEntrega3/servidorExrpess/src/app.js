@@ -21,8 +21,9 @@ app.get('/products', async (req, res) => {
 
   app.get('/products/:pid', async (req, res) => { 
     try {
-      const products = await manager.getProductsById(req.params.pid);
-      if (!products) {
+      const productId = Number(req.params.pid);
+      const product = await manager.getProductsById(productId);
+      if (!product) {
         res.status(404).send('Producto no encontrado');
       } else {
         res.send({ product });
@@ -32,6 +33,22 @@ app.get('/products', async (req, res) => {
       res.status(500).send('Error interno del servidor');
     }
   });
+
+  app.get('/productsLimit', async (req,res) => {
+    try {
+      const queryLimit = Number(req.query.limit);
+      if(queryLimit < 0){
+        res.status(400).send('El limite no puede ser negativo');
+      }else{
+        const getProductsLimits = await manager.getProductsWithLimit(queryLimit);
+      res.send({getProductsLimits});
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
+  });
+
 
 
 app.listen(8080, () =>console.log("listening on 8080"));

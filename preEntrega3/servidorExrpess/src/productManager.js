@@ -23,17 +23,31 @@ export  class productManager {
         }
     }
 
-    getProdctsById = async (id) => {
+    getProductsById = async (id) => {
         try {
-            const products = await this.getProdcts()
-            const productId = products.find((p) => p.id === parseInt(id))
-            if(productId){
-                return productId
-            }else{
-                return "not found, el id no fue encontrado"
+            console.log("id:" + id)
+            const products = await this.getProducts()
+            const productById = products.find((product) => product.id === id);
+            if (!productById){
+                throw new Error('No existe el producto');
             }
+            return productById
         } catch (error) {
             console.log(error);
+        }
+    }
+
+    getProductsWithLimit = async (limit) => {
+        try {
+            console.log("Limites: " + limit)
+            const products = await this.getProducts();
+            const productsLimit = products.slice(0,limit);
+            if(limit < 0) {
+                throw new Error('el limite no puede ser negativo');
+            }
+            return productsLimit;
+        } catch (error) {
+             console.log(error);
         }
     }
 
